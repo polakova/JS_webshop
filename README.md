@@ -16,13 +16,14 @@ Databáza a produkty (prehliadače) sú vytvorené pri spustení servera. Implem
 
 ## Spustenie riešenia
 
-Jednoduché spustenie je ideálne vykonať za pomoci Docker.
+Jednoduché spustenie je ideálne vykonať za pomoci Docker (v prípade absencie Docker odporúčam inštalovať tu: https://docs.docker.com/docker-for-windows/install/).
 
 Postupnosť krokov k spusteniu:
-1. stiahnutie projektu lokálne do PC
-2. spustenie Docker (v prípade absencie Docker odporúčam inštalovať tu: https://docs.docker.com/docker-for-windows/install/)
-3. otvorenie terminálu v priečinku projektu
-4. napísanie príkazu `docker-compose build`
-5. po dokončení vykonávania predchádzajúceho príkazu napísanie príkazu `docker-compose up`
-6. otvorenie nového terminálu v priečinku projektu
-7. napísanie príkazu `docker-compose up myservice`
+1. stiahnutie projektu lokálne do PC,
+2. spustenie Docker,
+3. otvorenie terminálu v priečinku projektu,
+4. napísanie príkazu `docker-compose build`,
+5. po dokončení vykonávania predchádzajúceho príkazu napísanie príkazu `docker-compose up`,
+6. otvorenie nového terminálu v priečinku projektu,
+7. napísanie príkazu `docker-compose up myservice`,
+8. otvorenie http://localhost:8080/ v ľubovoľnom prehliadači.
