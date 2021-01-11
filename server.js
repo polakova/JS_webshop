@@ -52,11 +52,11 @@ app.get('/home', (req, res) => {
 
 
 app.get('/admin', (req, res) => {
-    queryHelper("select orders.id as order_id, customers.name as name, products.name as product_name, order_items.quantity as quantity, orders.paid as paid " +
-                "from orders " + 
-                "left join customers on orders.user_id = customers.id " + 
-                "left join order_items on orders.id = order_items.order_id " + 
-                "inner join products on order_items.product_id = products.id " +
+    queryHelper("SELECT orders.id AS order_id, customers.name AS name, products.name AS product_name, order_items.quantity AS quantity, orders.paid AS paid " +
+                "FROM orders " + 
+                "LEFT JOIN customers ON orders.user_id = customers.id " + 
+                "LEFT JOIN order_items ON orders.id = order_items.order_id " + 
+                "INNER JOIN products ON order_items.product_id = products.id " +
                 "ORDER BY orders.id, customers.name", 
         (qres) => {
             qres = JSON.parse(JSON.stringify(qres));
