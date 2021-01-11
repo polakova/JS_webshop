@@ -6,4 +6,4 @@ COPY ./ ./
 RUN ls -lA
 RUN npm run-script build
 EXPOSE 8080
-CMD [ "node", "server.js" ]
+CMD [ "node", "/usr/src/app/server/server.js" ]
