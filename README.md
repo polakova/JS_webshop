@@ -27,3 +27,14 @@ Postupnosť krokov k spusteniu:
 6. otvorenie nového terminálu v priečinku projektu,
 7. napísanie príkazu `docker-compose up myservice`,
 8. otvorenie http://localhost:8080/ v ľubovoľnom prehliadači.
+
+## Súborová štruktúra
+
+priečinok *client* - obsahuje súbor app.js -> v tomto súbore sa nachádza spustiteľná časť klientskej strany implementovaná v React. 
+         - priečinok obsahuje priečinok components -> v priečinku sú komponenty webshopu implementované v React.
+
+priečinok *doc* - obsahuje obrázkovú dokumentáciu projektu.
+
+priečinok *public* - zdieľaný priečinok medzi client a server stranou, obsahuje HTML súbor index.html, ktorý je jedenkrát načítaný pri spustení http://localhost:8080/.
+
+priečinok *server* - obsahuje server stranu riešeina, konkrétne súbor server.js.
