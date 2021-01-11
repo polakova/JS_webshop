@@ -37,4 +37,4 @@ priečinok *doc* - obsahuje obrázkovú dokumentáciu projektu.
 
 priečinok *public* - zdieľaný priečinok medzi client a server stranou, obsahuje HTML súbor index.html, ktorý je jedenkrát načítaný pri spustení http://localhost:8080/.
 
-priečinok *server* - obsahuje server stranu riešeina, konkrétne súbor server.js.
+priečinok *server* - obsahuje server stranu riešenia, konkrétne súbor server.js.
